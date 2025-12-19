@@ -1,0 +1,63 @@
+<script>
+  const correctPassword = "family2025";
+  const userPassword = prompt("Enter family password:");
+
+  if (userPassword !== correctPassword) {
+    alert("Access denied!");
+    window.location.href = "index.html";
+  }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Family Gallery</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="tree.html">Family Tree</a>
+  <a href="values.html">Values</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+
+<!-- <section class="slider">
+  <img id="slider-image" src="images/pic1.jpg" alt="Family photo">
+  <p id="caption">Family reunion 2015</p>
+
+  <div class="controls">
+    <button onclick="prevImage()">❮ Prev</button>
+    <button onclick="nextImage()">Next ❯</button>
+  </div>
+</section> -->
+
+<section class="slider-container">
+
+  <div class="story-box">
+    <h2 id="caption"></h2>
+    <p id="story-text"></p>
+
+    <div class="controls">
+      <button onclick="prevImage()">❮ Prev</button>
+      <button onclick="nextImage()">Next ❯</button>
+    </div>
+  </div>
+
+  <div class="image-box">
+    <img id="slider-image" src="" alt="Family image">
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
